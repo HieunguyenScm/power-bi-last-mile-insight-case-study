@@ -27,7 +27,9 @@ This dashboard was developed to answer the following business questions:
 
 ## Dashboard Preview
 
-![Dashboard Overview](images/dashboard-overview.png)
+Dashboard screenshots will be updated once the Power BI report is accessible again.
+
+The Power BI file is available in this repository for review.
 
 ---
 
@@ -129,3 +131,25 @@ supply-chain-operations-visibility-dashboard/
 │
 └── docs/
     └── project-report.md
+```
+## Data Privacy Note
+
+The raw dataset is not publicly shared due to confidentiality.
+
+This repository is used for portfolio demonstration purposes only. Sensitive or confidential data has been removed or anonymized where applicable.
+
+---
+
+## Detailed Report
+
+A detailed business analysis report is available here:
+
+[Read the full project report](docs/project-report.md)
+
+---
+
+## Conclusion
+
+The key improvement opportunity is to convert more assigned orders into successful deliveries by reducing post-assignment leakage, improving operational visibility, managing payload capacity, and optimizing rider productivity.
+
+This project shows how Power BI can be used as a decision-support tool to improve supply chain operations performance.
