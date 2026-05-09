@@ -1,22 +1,50 @@
-# Last-Mile Delivery Performance Analysis
+# Supply Chain Operations Performance & Visibility Dashboard
 
-## 1. Project Overview
+## Project Summary
 
-This project analyzes last-mile delivery performance using Power BI.  
-The dataset focuses on delivery assignment, successful delivery rate, payload capacity, HR cost, rider productivity, and operational leakage.
+This project presents a Power BI dashboard designed to analyze supply chain operations performance, with a focus on delivery execution, assignment efficiency, payload capacity, HR cost, and rider productivity.
 
-## 2. Business Context
+The objective is to improve operational visibility, identify performance leakage, and support faster data-driven decision-making across supply chain operations.
 
-The objective of this case study is to identify operational bottlenecks in the last-mile delivery process and propose actionable recommendations to improve delivery success rate and reduce post-assignment leakage.
+This project demonstrates practical skills in Power BI, Power Query, data modeling, KPI tracking, and business insight generation.
 
-## 3. Key Insight
+---
 
-The main issue is not only the number of inbound orders or the assignment rate.  
-The assignment rate is already 89.4%, but only 552 out of 650 assigned orders were successfully delivered.
+## Business Context
 
-This means there are 98 assigned-but-not-successful orders, showing a leakage in last-mile execution.
+In supply chain operations, performance issues often do not come only from demand volume or available capacity. They can also come from poor visibility, manual tracking, delayed execution, inefficient allocation, and lack of root-cause analysis.
 
-## 4. Key Metrics
+This dashboard was developed to answer the following business questions:
+
+- How many orders are received, assigned, and successfully completed?
+- Where does operational leakage happen?
+- How much assigned volume fails to convert into successful delivery?
+- How does payload affect operational capacity?
+- How do HR cost, rider productivity, and delivery performance connect?
+- What actions can improve service level and operational efficiency?
+
+---
+
+## Dashboard Preview
+
+![Dashboard Overview](images/dashboard-overview.png)
+
+---
+
+## Tools Used
+
+- Power BI
+- Power Query
+- Data Modeling
+- DAX
+- Excel / CSV
+- Supply Chain Operations Analysis
+- KPI Dashboard Design
+- Business Problem Solving
+
+---
+
+## Key Metrics
 
 | Metric | Value |
 |---|---:|
@@ -27,33 +55,77 @@ This means there are 98 assigned-but-not-successful orders, showing a leakage in
 | GTC on New Orders | 76.21% |
 | GTC on Assigned Orders | 84.96% |
 | Assigned-but-not-GTC Orders | 98 |
+| Assigned Payload | 9,277 kg |
+| Average Payload per Assigned Order | 14.27 kg/order |
 
-## 5. Main Findings
+---
 
-### 5.1 Post-assignment leakage is the biggest issue
+## Key Insight
 
-Although most new orders were assigned, a significant number of assigned orders did not convert into successful deliveries.
+The main issue is not only the number of inbound orders or the assignment rate.
 
-### 5.2 Payload is not the only bottleneck
+Although the assignment rate reached 89.4%, only 552 out of 650 assigned orders were successfully delivered. This created 98 assigned-but-not-successful orders, showing a clear operational leakage after assignment.
 
-The average assigned payload is around 14.27 kg/order, which does not immediately indicate severe overload. However, heavy orders above 20kg should still be managed separately.
+This means the biggest improvement opportunity lies in improving execution quality after orders have already entered the delivery operation.
 
-### 5.3 Early execution before 9:30 is important
+---
 
-Orders handled earlier in the day may improve delivery success because the operation team has more time to solve exceptions.
+## Analysis Highlights
 
-### 5.4 Rider productivity should be optimized
+### 1. Post-assignment leakage
 
-The operation should not only increase headcount but also improve orders per rider, successful deliveries per rider, and error control.
+The dashboard shows that many orders were already assigned but did not convert into successful deliveries. These orders consume operational resources such as rider capacity, vehicle usage, handling time, and delivery cost, but do not generate successful delivery outcomes.
 
-## 6. Recommendations
+### 2. Operational visibility
 
-1. Track assigned-but-not-successful orders separately.
-2. Add reason codes for every failed delivery.
-3. Increase the percentage of orders delivered before 9:30.
-4. Manage heavy orders above 20kg as a separate operational group.
-5. Improve rider productivity through route optimization, training, and incentive design.
+By connecting assignment, successful delivery, payload, HR cost, and productivity indicators, the dashboard improves visibility across the delivery operation and helps identify where performance issues occur.
 
-## 7. Conclusion
+### 3. Payload and load planning
 
-The key improvement opportunity is to convert more assigned orders into successful deliveries by reducing post-assignment leakage, improving early-day execution, managing heavy orders separately, and optimizing rider productivity.
+The average payload per assigned order is around 14.27 kg. While this does not immediately indicate severe overload, heavy orders should still be monitored separately because they may affect route efficiency, handling time, and vehicle planning.
+
+### 4. Productivity and cost control
+
+The dashboard links delivery performance with HR cost and rider productivity. This helps evaluate whether the operation should improve route planning, rider allocation, training, or incentive design instead of only increasing headcount.
+
+---
+
+## Recommendations
+
+1. Track assigned-but-not-GTC orders as a separate KPI.
+2. Add failure reason codes for every unsuccessful delivery.
+3. Improve early-day execution to reduce end-of-day delivery failures.
+4. Monitor heavy orders separately for better load planning.
+5. Connect rider productivity with cost and service-level performance.
+6. Use dashboard insights to support faster operational decision-making.
+
+---
+
+## Relevance to Supply Chain Internship Role
+
+This project is relevant to supply chain roles that require data-driven tools, operational visibility, planning support, and cross-functional problem solving.
+
+It demonstrates the ability to:
+
+- Build a Power BI dashboard for supply chain performance tracking.
+- Use Power Query to clean and transform operational datasets.
+- Analyze service-level and execution performance.
+- Identify root causes behind operational leakage.
+- Translate data insights into practical business recommendations.
+- Support decision-making through KPI visibility and dashboard design.
+
+---
+
+## Repository Structure
+
+```text
+supply-chain-operations-visibility-dashboard/
+│
+├── README.md
+├── Supply-Chain-Operations-Dashboard.pbix
+│
+├── images/
+│   └── dashboard-overview.png
+│
+└── docs/
+    └── project-report.md
